@@ -1,5 +1,5 @@
 .about-container {
-    width: 95%;
+    width: 950px;
     margin: 20px auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -21,6 +21,8 @@
 
 .left-section > h1 {
     margin: 20px 0;
+    font-size: 3em;
+    color: #436657;
 }
 
 .line-break {

@@ -2,6 +2,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .gallery-box {
@@ -16,19 +17,22 @@
     display: flex;
     justify-content: center;
     grid-column: 1 / span 3;
-    margin: 20px 0;
+    margin: 0;
+    font-size: 1.5em;
+    color: #436657;
 }
 
 .gallery-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .gallery-item img {
     margin-bottom: 10px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px silver;
 }
 
 .gallery-item > a {
