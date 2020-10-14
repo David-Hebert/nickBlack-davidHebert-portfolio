@@ -26,6 +26,17 @@
     align-items: center;
 }
 
-.gallery-item > img {
+.gallery-item img {
     margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.gallery-item > a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+.gallery-item  > a:hover {
+    opacity: .8;
 }
