@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Lato;
+}
+
+body {
+	width: 100%;
 }
 
 .nav {
@@ -14,6 +20,11 @@
 .nav-icon {
     position: absolute;
     left: 10px;
+    transition: 0.3s;
+}
+
+.nav-icon:hover {
+	filter: brightness(1.2);
 }
 
 .nav-block a {
@@ -24,29 +35,64 @@
     margin: 0 10px;
 }
 
+.nav-block a:hover {
+	transform: scale(1.2);
+	box-shadow: 1px 1px 3px grey;
+	transition: 0.2s;
+}
+
+.nav-block a:active {
+	border: 1px solid black;
+}
+
 footer {
-	position: absolute;
-	bottom: 0;
 	display: inline-flex;
 	flex-wrap: nowrap;
 	width: 100%;
 	background-color: #858585;
 	margin: 0;
-	margin-top: 35px;
+	margin-top: 0px;
 	padding: 36px 0 42px;
 	color: white;
+	justify-content: space-between;
+	align-items: space-between;
 }
+
 .copyright {
+	float: left;
 	width: 300px;
-	margin: 10px;
+	margin-left: 10px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .footer-buttons {
-	margin-left: 70vw;
+	margin-left: 60vw;
+	margin-right: 20px;
 }
 
 .social-button {
-	width: 10px;
+	filter: invert(100%);
+	opacity: 0.7;
+	width: 50px;
 	padding: 10px;
-	background-color: white;
+	cursor: pointer;
+}
+
+.social-button:hover {
+	opacity: 1;
+}
+
+.main-img {
+	position: relative;
+  	text-align: center;
+	width: 100%;
+}
+
+.landing-main h1 {
+	position: absolute;
+  	top: 60%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	color: white;
 }
