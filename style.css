@@ -52,13 +52,13 @@ footer {
 .copyright {
 	width: 300px;
 	margin: 10px;
-	font-size: 12px;
+	font-size: 14px;
 	text-align: left;
 	margin-top: auto;
 }
 
 .footer-buttons {
-	margin-left: 60vw;
+	margin-left: auto;
 }
 
 .social-button {
@@ -85,3 +85,4 @@ footer {
   	transform: translate(-50%, -50%);
   	color: white;
 }
+
