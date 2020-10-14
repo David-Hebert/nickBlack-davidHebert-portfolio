@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+* {
+    font-family: Lato;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+}
+
+.right-section img {
+    border-radius: 50%;
+}
+
+h1 {
+    color: black;
+}
+
 .about-container {
     width: 100%;
     margin: 20px auto;
