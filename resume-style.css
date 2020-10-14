@@ -17,6 +17,7 @@
 .resume-portrait {
 	display: grid;
 	width: 220px;
+    box-shadow: 2px 2px 10px grey;
 }
 
 .name-job {
