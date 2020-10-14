@@ -1,5 +1,5 @@
 .about-container {
-    width: 100%;
+    width: 95%;
     margin: 20px auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -16,7 +16,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     padding: 20px;
-    text-align: left;
+    text-align: justify;
 }
 
 .left-section > h1 {
@@ -38,8 +38,11 @@
     padding: 20px;
 }
 
+.right-section > img {
+    border-radius: 150px;
+}
 .bottom-section {
     grid-area: bottom;
     padding: 20px;
-
+    text-align: justify;
 }
