@@ -24,11 +24,17 @@ body {
 	left: 10px;
 	top: 10px;
 	transition: 0.3s;
+	cursor: pointer;
 }
 
-.nav-icon:hover {
-	filter: brightness(1.3);
-	cursor: pointer;
+.nav-icon img {
+	opacity: 0.5;
+	transition: 0.2s;
+}
+
+.nav-icon img:hover {
+	opacity: 1;
+	width: 50px;
 }
 
 .nav-block a {
