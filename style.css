@@ -12,17 +12,20 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* background: cornflowerblue; */
-    background: white;
+    overflow: hidden;
+	background: white;
+	/* background: cornflowerblue; */
 }
 .header-icon {
-    position: absolute;
+	position: absolute;
+	top: 17px;
     left: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60px;
+	width: 80px;
+	
 }
 .nav-icon {
     background: white;
@@ -55,6 +58,44 @@
 }
 .nav-block a:hover {
     box-shadow: 0 0 10px rgb(49, 61, 78);
+}
+
+.nav-links.loading {
+	animation: fadeIn;
+    animation-duration: 1s;
+}
+
+
+.line-container {
+	display: inline-block;
+	cursor: pointer;
+	margin: 0;
+  }
+  
+  .bar1, .bar2, .bar3 {
+	width: 35px;
+	height: 5px;
+	background-color: #333;
+	margin: 6px 0;
+	transition: 0.4s;
+  }
+  
+  .change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+.nav-block .icon {
+	display: none;
+	padding: 0 10px;
+
 }
 
 .main-container {
@@ -117,3 +158,33 @@ footer {
     margin: 6px;
 	/* background-color: white; */
 }
+
+@media screen and (max-width: 699px) {
+	.nav-block a {
+		display: none;
+	}
+	.nav-block a:hover {
+		box-shadow: none;
+	}
+	.nav-block a.icon {
+		background: white;;
+	  	display: block;
+	}
+	.nav.responsive {
+		height: auto;
+	}
+	.nav-block.responsive {
+		display: flex;
+		flex-flow: column;
+		height: auto;
+		margin-top: 25px;
+	}
+	.nav-block.responsive a {
+	  display: flex;
+	  align-items: center;
+	  justify-content: flex-end;
+	  margin: 3px 10px;
+	  background: white;
+	  color: black;
+	} 
+  }
