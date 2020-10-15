@@ -116,10 +116,24 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 svg {
     height: 40px;
     margin-right: 15px;
-
+    flex-shrink: 0;
 }
 
 svg path{
     fill: silver;
 }
 
+@media (max-width: 699px) {
+    .form-container {
+        width: 350px;
+    }
+    .contact-info-box {
+        width: 75%;
+    }
+    .name-input {
+        display: block;
+    }
+    .name-input input {
+        width: 100%;
+    }
+}
