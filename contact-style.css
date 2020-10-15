@@ -1,14 +1,7 @@
 main {
 	display: flex;
-	/* flex-direction: column; */
-	/* flex-wrap: wrap; */
 	align-items: center;
 	justify-content: center;
-	/* width: 35%; */
-    margin: 150px auto 0;
-    background: linear-gradient(to bottom, rgb(235, 235, 240), white);
-    transform: skewY(-7deg);
-    z-index: 1;
 
 }
 
@@ -92,6 +85,14 @@ input[type="submit"]:hover, input[type="reset"]:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;;
+}
+
+.line-break {
+    width: 60%;
+    height: 2px;
+    background: silver;
+    margin: 20px 0;
 }
 
 .contact-line {

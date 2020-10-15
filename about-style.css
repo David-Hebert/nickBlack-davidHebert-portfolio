@@ -1,12 +1,16 @@
 .about-container {
     width: 950px;
-    margin: 20px auto;
+    margin: -80px auto 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-areas: 
                 "left left right"
                 "left left right"
                 "bottom bottom bottom";
+    transform: skewY(7deg);
+    box-shadow: 0 5px 18px 3px rgba(0,0,0,.1);
+    background: white;
+    border-radius: 10px;
 }
 
 .left-section {
@@ -42,6 +46,7 @@
 
 .right-section > img {
     border-radius: 150px;
+    box-shadow: 1px 5px 15px rgba(0,0,0,.5);
 }
 .bottom-section {
     grid-area: bottom;
