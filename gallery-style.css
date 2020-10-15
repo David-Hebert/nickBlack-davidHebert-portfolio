@@ -45,3 +45,60 @@
     text-align: center;
     color: black;
 }
+
+@media screen and (max-width: 699px) {
+    .nav-block a {
+        display: none;
+    }
+    .nav-block a.icon {
+        background: white;;
+        display: block;
+    }
+    .nav.responsive {
+        height: auto;
+    }
+    .nav-block.responsive {
+        display: flex;
+        flex-flow: column;
+        height: 300px;
+        margin-top: 15px;
+    }
+    .nav-block.responsive a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin: 0 10px;
+      background: white;
+      color: black;
+    }
+
+    .social-button {
+        width: 25px;
+        padding: 5px;
+        margin-right: 10px;
+    } 
+
+    .landing-main h1 {
+        top: 20%;
+    }
+
+    .copyright {
+        font-size: 10px;
+        width: 200px;
+    }
+
+    .nav-block a:hover {
+        box-shadow: none;
+        color: #757575;
+        transition: 0.2s;
+    } 
+
+    .gallery-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-item h2 {
+        padding-bottom: 40px;
+    }
+  }

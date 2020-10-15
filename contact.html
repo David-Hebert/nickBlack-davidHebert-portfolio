@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="contact-style.css">
-    <title>Portfolio</title>
+    <title>Portfolio | Contact</title>
 </head>
 <body>
-  <div class="nav">
-        <a href="index.html" class="nav-icon"><img src="./placeholder-50x50.jpg" alt=""></a>
-        <div class="nav-block">
+  <div class="nav" id="navbar">
+        <a href="index.html" class="nav-icon" ><img src="./placeholder-50x50.jpg" alt=""></a>
+        <div class="nav-block" id="myTopNav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div class="line-container" id="lineContainer">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+            </a>
             <a href="about.html">About</a>
             <a href="gallery.html">Gallery</a>
             <a href="resume.html">Resume</a>
             <a href="contact.html">Contact</a>
         </div>
     </div>
+    </div>
     <main>
-        <h1>Contact Me</h1><br>
-        <input type="text" name="name" placeholder="Name">
-        <input type="text" name="email" placeholder="E-Mail">
-        <input type="number" name="phone" placeholder="Phone Number">
-        <textarea type="text" name="message" placeholder="Your Message Here"></textarea>
-        <button>Submit</button>
+        <form>
+            <h1>Contact Me</h1><br>
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="E-Mail">
+            <input type="number" name="phone" placeholder="Phone Number">
+            <textarea type="text" name="message" placeholder="Your Message Here"></textarea>
+            <button>Submit</button>
+        </form>
     </main>
     <footer>
             <div class="copyright">
@@ -35,5 +45,6 @@
                 <img class="social-button" src="./Images/linkedin.png">
             </div>
         </footer>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
