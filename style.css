@@ -24,7 +24,8 @@ main {
     align-items: center;
     overflow: hidden;
 	background: white;
-	/* background: cornflowerblue; */
+    /* background: cornflowerblue; */
+    
 }
 .header-icon {
 	position: absolute;
@@ -171,6 +172,7 @@ footer {
 }
 
 @media screen and (max-width: 699px) {
+
 	.nav-block a {
 		display: none;
 	}
@@ -182,10 +184,10 @@ footer {
 	  	display: block;
 	}
 	.nav.responsive {
-		height: auto;
+        height: auto;
 	}
 	.nav-block.responsive {
-		display: flex;
+        display: flex;
 		flex-flow: column;
 		height: auto;
 		margin-top: 25px;
@@ -197,5 +199,10 @@ footer {
 	  margin: 3px 10px;
 	  background: white;
 	  color: black;
-	} 
+    } 
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5px 0 0;
+    }
   }
