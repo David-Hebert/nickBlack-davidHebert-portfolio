@@ -46,3 +46,25 @@
 .gallery-item  > a:hover {
     opacity: .8;
 }
+
+@media (max-width: 1024px) {
+    .gallery-box {
+        width: 700px;
+    }
+}
+@media (max-width: 699px) {
+    .gallery-box {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    .gallery-title {
+        font-size: 1.125em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .gallery-item {
+        margin: 20px auto;
+    }
+}
