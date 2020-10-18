@@ -80,12 +80,13 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 }
 
 .contact-info-box {
-    width: 55%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
+    margin-left: 100px;
 }
 
 .line-break {
@@ -121,6 +122,26 @@ svg {
 
 svg path{
     fill: silver;
+}
+
+svg.copy {
+    visibility: hidden;
+    height: 30px;
+    transition: height linear 0.25s;
+}
+svg.copy path {
+    fill: #006db8;
+}
+.contact-line:hover svg.copy {
+    visibility: visible;
+}
+svg.copy:hover {
+    cursor: pointer;
+    height: 35px
+}
+
+img > svg path {
+    fill: blue;
 }
 
 @media (max-width: 699px) {

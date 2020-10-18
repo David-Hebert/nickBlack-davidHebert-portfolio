@@ -16,3 +16,10 @@ function myFunction() {
         a.className = "nav-links";
     }
 }
+
+function copyToClipboard(element) {
+    console.log("copied!");
+    let clipText = element.parentNode.innerText;
+    console.log(clipText)
+    navigator.clipboard.writeText(clipText)
+}
