@@ -8,6 +8,10 @@ main {
 	margin: auto;
 }
 
+footer {
+	position: absolute;
+}
+
 form {
 	display: flex;
 	flex-direction: column;

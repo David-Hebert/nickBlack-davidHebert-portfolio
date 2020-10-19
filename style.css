@@ -86,8 +86,8 @@ body {
 }
 
 footer {
-	/* position: absolute;
-	bottom: 0; */
+	position: relative;
+	bottom: 0;
 	display: inline-flex;
 	justify-content: left;
 	flex-wrap: nowrap;
@@ -98,6 +98,7 @@ footer {
 	padding: 36px 0 42px;
 	color: white;
 }
+
 .copyright {
 	width: 300px;
 	margin: 10px;

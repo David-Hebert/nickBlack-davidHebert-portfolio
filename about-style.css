@@ -8,6 +8,10 @@ main {
     margin: auto;
 }
 
+footer {
+    position: absolute;
+}
+
 .right-section img {
     border-radius: 50%;
 }
@@ -126,5 +130,9 @@ h1 {
 
     .line-break {
         margin-left: auto;
+    }
+
+    footer {
+        position: relative;
     }
   }
